@@ -3,6 +3,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from api import views
 
 urlpatterns = [
+    path('', views.home, name='blog-home'),
     # corresponds to the UserList view
     path('users/', views.UserList.as_view()),
     # corresponds to the UserDetail view, using primary key(pk) as a keyword argument

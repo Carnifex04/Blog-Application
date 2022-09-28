@@ -19,5 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('api.urls')),  # adding url patterns to the main project
-    path('api-auth/', include('rest_framework.urls'))  # adding a Log in button to the browsable API
+    path('api-auth/', include('rest_framework.urls')),  # adding a Log in button to the browsable API
+    path('', include('api.urls')),
 ]

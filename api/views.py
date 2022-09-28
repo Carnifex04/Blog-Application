@@ -9,6 +9,14 @@ from django.contrib.auth.models import User
 
 # Create your views here.
 
+# Home Page
+def home(request):
+    context = {
+        'posts': Post.objects.all(),
+    }
+    return render(request, 'api/home.html', context)
+
+
 # UserList view provides read-only access to the list of users
 class UserList(generics.ListAPIView):
     # list of model instances
