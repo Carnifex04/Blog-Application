@@ -32,22 +32,15 @@ login and authentication. In general terms, it lets the user create and manage i
 Blog API requires python and django to run.
 
 ```python
-pip
-install
-django
-pip
-install
-djangorestframework
+pip install django
+pip install djangorestframework
 ```
 
 Clone the repository, and start the server
 
 ```python
-cd
-blog
-python
-manage.py
-startserver
+cd blog
+python manage.py startserver
 ```
 
 Click on the ip address generated, which will launch the home page of the application.
