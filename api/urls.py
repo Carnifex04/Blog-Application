@@ -7,6 +7,10 @@ urlpatterns = [
     path('users/', views.UserList.as_view()),
     # corresponds to the UserDetail view, using primary key(pk) as a keyword argument
     path('users/<int:pk>/', views.UserDetail.as_view()),
+    # corresponds to the PostList view
+    path('posts/', views.PostList.as_view()),
+    # corresponds to the PostDetail view, using primary key(pk) as a keyword argument
+    path('posts/<int:pk>/', views.PostDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
