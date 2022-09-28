@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
-import serializers
+from api import serializers
 from django.contrib.auth.models import User
 
 
