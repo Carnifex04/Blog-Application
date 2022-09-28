@@ -31,7 +31,7 @@ login and authentication. In general terms, it lets the user create and manage i
 
 Blog API requires python and django to run.
 
-```python
+```sh
 pip
 install
 django
@@ -42,7 +42,7 @@ djangorestframework
 
 Clone the repository, and start the server
 
-```python
+```sh
 cd
 blog
 python
