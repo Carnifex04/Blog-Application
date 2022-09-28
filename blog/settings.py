@@ -29,9 +29,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    # Added rest_framework and api app
+    # this allows to add other configuration options to your app
     'rest_framework',
     'api.apps.ApiConfig',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
